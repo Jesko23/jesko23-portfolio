@@ -1,0 +1,20 @@
+# Local / operating-system files
+.DS_Store
+Thumbs.db
+
+# Private source evidence: the website uses the textual, redacted credential only.
+assets/source/microsoft-azure-ai-certificate.png
+
+# Rejected early cartoon directions; intentionally excluded from the website repository.
+/个人IP-可爱头像-v1.png
+/个人IP-六视图-v1.png
+/assets/jesko-cartoon-ip-v1.png
+/assets/jesko-cartoon-ip-v2.png
+
+# Local preview output
+.serve/
+
+# Local design iterations and browser-QA evidence; final lock/report stay versioned.
+references/drafts/
+docs/qa/screenshots/
+docs/qa/videos/
