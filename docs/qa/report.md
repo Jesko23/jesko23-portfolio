@@ -33,3 +33,7 @@ Result: **Pass**
 6. Increased dark-section cobalt contrast and added grouping semantics to labelled diagrams.
 
 Local screenshots remain under `docs/qa/screenshots/` and are intentionally ignored by Git.
+
+## 2026-08-20 quant architecture regression
+
+The architecture thumbnail and expanded dialog were corrected after a fixed intrinsic height distorted the source image. Desktop, ultrawide, mobile, dialog interaction, horizontal overflow, and accessibility were rechecked. See `docs/qa/architecture-fix/report.md`.

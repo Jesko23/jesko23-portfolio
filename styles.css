@@ -908,6 +908,7 @@ button {
 .project--quant .project__english {
   font-family: var(--display);
   font-size: clamp(30px, 3vw, 50px);
+  line-height: 1;
   letter-spacing: 0;
 }
 
@@ -1013,6 +1014,9 @@ button {
 
 .architecture-proof img {
   width: 100%;
+  height: auto;
+  aspect-ratio: 1672 / 941;
+  object-fit: contain;
   border: 1px solid #7f8790;
   background: #fff;
   transition: border-color 180ms ease, translate 180ms ease;
@@ -1031,6 +1035,29 @@ button {
   font-family: var(--zh);
   font-size: 14px;
   letter-spacing: 0.08em;
+}
+
+@media (min-width: 901px) {
+  .project--quant.section-pad {
+    padding-block: 16px 32px;
+  }
+
+  .project--quant .project__summary {
+    margin-top: 20px;
+  }
+
+  .project--quant .system-spine {
+    margin-top: 28px;
+  }
+
+  .project--quant .quant-aside {
+    align-self: start;
+    padding-top: 72px;
+  }
+
+  .project--quant .project__footer {
+    margin-top: 28px;
+  }
 }
 
 .timeline {
@@ -1239,12 +1266,19 @@ button {
 
 .architecture-dialog {
   width: min(1500px, calc(100vw - 32px));
+  height: min(1000px, calc(100svh - 32px));
   max-width: none;
-  max-height: calc(100svh - 32px);
+  max-height: none;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  overflow: hidden;
   padding: 0;
   border: 1px solid #555f69;
   background: var(--system);
   color: #fff;
+}
+
+.architecture-dialog[open] {
+  display: grid;
 }
 
 .architecture-dialog::backdrop {
@@ -1294,15 +1328,21 @@ button {
 }
 
 .architecture-dialog__media {
-  overflow: auto;
-  max-height: calc(100svh - 150px);
+  min-height: 0;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
   padding: 20px;
   background: #0e1115;
 }
 
 .architecture-dialog__media img {
-  width: 100%;
-  min-width: 760px;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: calc(100svh - 200px);
+  aspect-ratio: 1672 / 941;
+  object-fit: contain;
   margin: auto;
   background: #fff;
 }
@@ -1868,14 +1908,40 @@ button {
   }
 
   .architecture-dialog {
-    width: 100vw;
-    max-height: 100svh;
-    border: 0;
+    width: calc(100vw - 24px);
+    height: fit-content;
+    max-height: calc(100svh - 24px);
+    grid-template-rows: auto auto auto;
+    border: 1px solid #555f69;
+  }
+
+  .architecture-dialog__bar {
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .architecture-dialog__bar p {
+    font-size: 14px;
+  }
+
+  .architecture-dialog__bar small {
+    display: block;
+    margin-top: 4px;
+  }
+
+  .architecture-dialog__bar button {
+    min-width: 72px;
+    flex: 0 0 auto;
   }
 
   .architecture-dialog__media {
-    max-height: calc(100svh - 150px);
     padding: 12px;
+  }
+
+  .architecture-dialog__note {
+    padding: 9px 12px;
+    text-align: left;
   }
 }
 
