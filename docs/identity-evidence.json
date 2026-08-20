@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "reference_lock_version": "v3",
+  "source_strategy_locked": true,
+  "review_scope": "all_sections",
+  "fresh_review_mode": "self-blind",
+  "final_status": "pass",
+  "viewports": {
+    "desktop": { "width": 1672, "height": 941 },
+    "ultrawide": { "width": 2200, "height": 1200 },
+    "mobile": { "width": 390, "height": 844 }
+  },
+  "fidelity_ledger": "docs/fidelity-ledger-v3.md",
+  "fresh_review": "docs/fresh-review-v3.md",
+  "sections": [
+    {
+      "id": "hero",
+      "reference": {
+        "path": "references/locked/v3/01-hero.png",
+        "sha256": "775460f07a438931f41762450447a0585dbe87b7d167f04f57d01ee2e35fb2bb"
+      },
+      "render_contract": "docs/restoration-plan-v3.md",
+      "topology": {
+        "kind": "section-specific",
+        "shared_with": [],
+        "reason": "Asymmetric editorial hero with one lightweight cartoon portrait and a three-step outcome signal."
+      },
+      "captures": {
+        "desktop": "docs/qa/cartoon-v3/desktop/01-hero.png",
+        "ultrawide": "docs/qa/cartoon-v3/ultrawide/01-hero.png",
+        "mobile": "docs/qa/cartoon-v3/mobile/01-hero.png"
+      },
+      "gates": {
+        "visual_meaning": "pass",
+        "hierarchy": "pass",
+        "personal_evidence": "pass",
+        "composition": "pass",
+        "typography": "pass",
+        "asset_crop": "pass",
+        "overlap": "pass",
+        "responsive": "pass",
+        "reference_fidelity": "pass"
+      },
+      "status": "pass"
+    },
+    {
+      "id": "capabilities",
+      "reference": {
+        "path": "references/locked/v3/02-capabilities.png",
+        "sha256": "411cdb36be0a3efd762a42f41dd862dc04d343d9d0f982b1a1e02106854817f7"
+      },
+      "render_contract": "docs/restoration-plan-v3.md",
+      "topology": {
+        "kind": "section-specific",
+        "shared_with": [],
+        "reason": "Three weighted capability cards converge into a single understand-build-verify product method."
+      },
+      "captures": {
+        "desktop": "docs/qa/cartoon-v3/desktop/02-capabilities.png",
+        "ultrawide": "docs/qa/cartoon-v3/ultrawide/02-capabilities.png",
+        "mobile": "docs/qa/cartoon-v3/mobile/02-capabilities.png"
+      },
+      "gates": {
+        "visual_meaning": "pass",
+        "hierarchy": "pass",
+        "personal_evidence": "pass",
+        "composition": "pass",
+        "typography": "pass",
+        "asset_crop": "pass",
+        "overlap": "pass",
+        "responsive": "pass",
+        "reference_fidelity": "pass"
+      },
+      "status": "pass"
+    },
+    {
+      "id": "crossborder",
+      "reference": {
+        "path": "references/locked/v3/03-crossborder.png",
+        "sha256": "b4983d47d06ae769ba0e1889d5e06ddd7f25ce33e8c14ab0c8f87fd1824f49b8"
+      },
+      "render_contract": "docs/restoration-plan-v3.md",
+      "topology": {
+        "kind": "section-specific",
+        "shared_with": [],
+        "reason": "Company project evidence is organized as a code-native business flow, contribution proof, and honest replace-later product area."
+      },
+      "captures": {
+        "desktop": "docs/qa/cartoon-v3/desktop/03-crossborder.png",
+        "ultrawide": "docs/qa/cartoon-v3/ultrawide/03-crossborder.png",
+        "mobile": "docs/qa/cartoon-v3/mobile/03-crossborder.png"
+      },
+      "gates": {
+        "visual_meaning": "pass",
+        "hierarchy": "pass",
+        "personal_evidence": "pass",
+        "composition": "pass",
+        "typography": "pass",
+        "asset_crop": "pass",
+        "overlap": "pass",
+        "responsive": "pass",
+        "reference_fidelity": "pass"
+      },
+      "status": "pass"
+    },
+    {
+      "id": "quant",
+      "reference": {
+        "path": "references/locked/v3/04-quant.png",
+        "sha256": "572cf628df99eadfe1beb6c9d8eb13e8eae081ef6cc837fd29d665ff4c3f7c89"
+      },
+      "render_contract": "docs/restoration-plan-v3.md",
+      "topology": {
+        "kind": "section-specific",
+        "shared_with": [],
+        "reason": "The unstable architecture image is replaced by five code-native layers plus a separate security-governance rail."
+      },
+      "captures": {
+        "desktop": "docs/qa/cartoon-v3/desktop/04-quant.png",
+        "ultrawide": "docs/qa/cartoon-v3/ultrawide/04-quant.png",
+        "mobile": "docs/qa/cartoon-v3/mobile/04-quant.png"
+      },
+      "gates": {
+        "visual_meaning": "pass",
+        "hierarchy": "pass",
+        "personal_evidence": "pass",
+        "composition": "pass",
+        "typography": "pass",
+        "asset_crop": "pass",
+        "overlap": "pass",
+        "responsive": "pass",
+        "reference_fidelity": "pass"
+      },
+      "status": "pass"
+    },
+    {
+      "id": "timeline",
+      "reference": {
+        "path": "references/locked/v3/05-timeline.png",
+        "sha256": "84e99b07f7931d182daf517dacf66ce42279b8cc3f793685e00e186890f80b33"
+      },
+      "render_contract": "docs/restoration-plan-v3.md",
+      "topology": {
+        "kind": "section-specific",
+        "shared_with": [],
+        "reason": "Four unequal chapters create a clear 2023-to-now progression from design background to AI product delivery."
+      },
+      "captures": {
+        "desktop": "docs/qa/cartoon-v3/desktop/05-timeline.png",
+        "ultrawide": "docs/qa/cartoon-v3/ultrawide/05-timeline.png",
+        "mobile": "docs/qa/cartoon-v3/mobile/05-timeline.png"
+      },
+      "gates": {
+        "visual_meaning": "pass",
+        "hierarchy": "pass",
+        "personal_evidence": "pass",
+        "composition": "pass",
+        "typography": "pass",
+        "asset_crop": "pass",
+        "overlap": "pass",
+        "responsive": "pass",
+        "reference_fidelity": "pass"
+      },
+      "status": "pass"
+    }
+  ]
+}

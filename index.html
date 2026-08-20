@@ -7,7 +7,7 @@
       name="description"
       content="郑子杰（Jesko-23）的个人履历与项目网站。现任 AI 架构工程师，目标 AI 产品经理，专注 AI 自动化、跨境业务系统与量化研究基础设施。"
     />
-    <meta name="theme-color" content="#f7f6f3" />
+    <meta name="theme-color" content="#fff9f1" />
     <meta property="og:title" content="郑子杰 / JESKO-23 — AI Architecture Engineer" />
     <meta
       property="og:description"
@@ -20,15 +20,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Noto+Sans+SC:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=20260820-1" />
-    <script src="script.js?v=20260819-6" defer></script>
+    <link rel="preload" href="assets/jesko-cartoon-avatar-v4.webp" as="image" type="image/webp" />
+    <link rel="stylesheet" href="styles-v3.css?v=20260820-4" />
+    <script src="script-v3.js?v=20260820-4" defer></script>
   </head>
 
   <body>
     <a class="skip-link" href="#main-content">跳到主要内容</a>
+
+    <div class="scroll-progress" aria-hidden="true"><i data-scroll-progress></i></div>
+
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="icon-tools" viewBox="0 0 24 24"><path d="M5 5h6v6H5zM13 13h6v6h-6zM14 5h5v4h-5zM5 15h5v4H5z"/><path d="M11 8h3M8 11v4M16 9v4M10 17h3"/></symbol>
+      <symbol id="icon-ops" viewBox="0 0 24 24"><path d="m4 8 8-4 8 4-8 4-8-4Z"/><path d="m4 12 8 4 8-4M4 16l8 4 8-4"/></symbol>
+      <symbol id="icon-code" viewBox="0 0 24 24"><path d="m9 7-5 5 5 5M15 7l5 5-5 5M13.5 4 10.5 20"/></symbol>
+      <symbol id="icon-cart" viewBox="0 0 24 24"><path d="M3 5h2l2.2 9h9.8l2-6H6M9 19h.01M17 19h.01"/></symbol>
+      <symbol id="icon-box" viewBox="0 0 24 24"><path d="m4 7 8-4 8 4v10l-8 4-8-4V7Z"/><path d="m4 7 8 4 8-4M12 11v10"/></symbol>
+      <symbol id="icon-truck" viewBox="0 0 24 24"><path d="M3 6h11v10H3zM14 10h4l3 3v3h-7zM7 19h.01M18 19h.01"/></symbol>
+      <symbol id="icon-warehouse" viewBox="0 0 24 24"><path d="m3 9 9-5 9 5v11H3V9Z"/><path d="M7 20v-7h10v7M9 13v7M15 13v7"/></symbol>
+      <symbol id="icon-data" viewBox="0 0 24 24"><path d="M4 17V7M20 17V7M4 12h16"/><path d="M8 8a4 4 0 0 1 8 0M8 16a4 4 0 0 0 8 0"/></symbol>
+      <symbol id="icon-store" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></symbol>
+      <symbol id="icon-research" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><circle cx="5" cy="7" r="2"/><circle cx="19" cy="7" r="2"/><circle cx="5" cy="18" r="2"/><circle cx="19" cy="18" r="2"/><path d="m7 8 3 2M17 8l-3 2M7 17l3-3M17 17l-3-3"/></symbol>
+      <symbol id="icon-risk" viewBox="0 0 24 24"><path d="M12 3 4 7v5c0 4.8 3.3 7.7 8 9 4.7-1.3 8-4.2 8-9V7l-8-4Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></symbol>
+      <symbol id="icon-audit" viewBox="0 0 24 24"><path d="M6 3h12v18H6z"/><path d="M9 8h6M9 12h6M9 16h4"/></symbol>
+      <symbol id="icon-key" viewBox="0 0 24 24"><circle cx="8" cy="12" r="4"/><path d="m12 12 8-8M16 8l2 2M18 6l2 2"/></symbol>
+    </svg>
 
     <header class="site-header" data-header>
       <a class="wordmark" href="#home" aria-label="返回首页">JESKO-23</a>
@@ -53,106 +72,110 @@
     </header>
 
     <main id="main-content">
-      <section class="hero paper-section" id="home" data-section="home">
+      <section class="hero signal-section" id="home" data-section="home">
+        <div class="hero-aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+
         <div class="hero__copy reveal">
           <p class="identity-line">郑子杰 / JESKO-23</p>
-          <h1>JESKO-23</h1>
+          <h1>让 AI 进入业务，<br /><em>让系统产生结果。</em></h1>
 
           <div class="role-lockup" role="group" aria-label="当前职位与目标职位">
-            <p><span>CURRENT</span> AI ARCHITECTURE ENGINEER</p>
-            <p><span>TARGET</span> AI PRODUCT MANAGER</p>
+            <p>AI ARCHITECTURE ENGINEER</p>
+            <p><span aria-hidden="true">→</span> AI PRODUCT MANAGER</p>
           </div>
 
-          <p class="hero__thesis">把 AI 变成真正跑在业务里的可复用系统。</p>
+          <p class="hero__thesis">把 AI 变成真正跑在业务里的系统。</p>
 
           <div class="hero__actions">
-            <a class="button button--primary" href="#work">VIEW WORK</a>
-            <a class="button button--outline" href="mailto:Jesko223@gmail.com">EMAIL</a>
+            <a class="button button--primary" href="#work">VIEW WORK <span aria-hidden="true">↗</span></a>
+            <a class="button button--outline" href="mailto:Jesko223@gmail.com">EMAIL <span aria-hidden="true">→</span></a>
           </div>
 
-          <div class="hero__meta" role="group" aria-label="职业信息">
-            <p>黑豆人工智能 · AI ARCHITECTURE ENGINEER · 2023—NOW</p>
-            <p>
-              CROSS-BORDER SYSTEMS · QUANT INFRASTRUCTURE
-              <span>(COMPANY / DE-IDENTIFIED)</span> · AI AUTOMATION
-            </p>
+          <p class="hero__evidence">黑豆人工智能 · 2023—NOW · COMPANY PROJECTS / DE-IDENTIFIED</p>
+        </div>
+
+        <div class="hero__identity reveal reveal--late" data-tilt>
+          <figure class="avatar-island">
+            <div class="avatar-orbit" aria-hidden="true"></div>
+            <img
+              src="assets/jesko-cartoon-avatar-v4.webp"
+              width="640"
+              height="640"
+              alt="郑子杰的原创欧美动画风格头像"
+              fetchpriority="high"
+              decoding="async"
+            />
+            <figcaption><span>JESKO-23</span><small>BUSINESS × AI × PRODUCT</small></figcaption>
+          </figure>
+
+          <div class="hero-capabilities" aria-label="核心能力">
+            <article><svg aria-hidden="true"><use href="#icon-tools"></use></svg><span>AI TOOLS</span></article>
+            <article><svg aria-hidden="true"><use href="#icon-ops"></use></svg><span>OPERATIONS</span></article>
+            <article><svg aria-hidden="true"><use href="#icon-code"></use></svg><span>BUSINESS-LED CODING</span></article>
           </div>
         </div>
 
-        <figure class="hero__portrait reveal reveal--late">
-          <img
-            src="assets/source/portrait-jesko.jpg"
-            width="4000"
-            height="4000"
-            alt="郑子杰的职业肖像"
-            fetchpriority="high"
-          />
-        </figure>
-
-        <a class="scroll-cue" href="#about" aria-label="继续浏览关于我的内容">
-          <span>SCROLL</span><i aria-hidden="true"></i>
-        </a>
+        <div class="hero-signal reveal" aria-label="工作方法：从业务问题到产品结果">
+          <div><span>01</span><b>BUSINESS PROBLEM</b><small>先理解真实业务问题</small></div>
+          <i aria-hidden="true"></i>
+          <div><span>02</span><b>AI SYSTEM</b><small>再构建可运行系统</small></div>
+          <i aria-hidden="true"></i>
+          <div><span>03</span><b>PRODUCT OUTCOME</b><small>最后验证业务结果</small></div>
+        </div>
       </section>
 
-      <section class="capabilities paper-section section-pad" id="about" data-section="about">
+      <section class="capabilities signal-section section-pad" id="about" data-section="about">
         <div class="section-heading reveal">
-          <p class="section-index">02 / CAPABILITIES</p>
-          <h2>WHAT I BRING <span>/ 我能带来的能力</span></h2>
+          <p class="section-index">CAPABILITIES / 我能带来的能力</p>
+          <h2>三种能力，<br /><em>一种工作方式。</em></h2>
           <p class="section-lead">
-            从业务现场出发，以非程序员的不同视角，把 AI 变成可执行的产品与系统。
+            从业务现场出发，把 AI 变成可执行、可验证、可持续优化的产品与系统。
           </p>
         </div>
 
-        <div class="capability-grid">
-          <article class="capability reveal">
-            <h3>AI WORKFLOW &amp;<br />AUTOMATION <span>/ AI 工作流与自动化</span></h3>
-            <p>用 AI 消除重复劳动，把时间留给业务判断、流程设计与结果复核。</p>
-            <ul class="evidence-list">
-              <li>采购截图 → SKU / 数量 / 价格 / 费用</li>
-              <li>日报候选 → 独立审计 → 正式发布</li>
-            </ul>
+        <div class="capability-grid reveal">
+          <article class="capability capability--cyan" data-spotlight>
+            <div class="capability__icon"><svg aria-hidden="true"><use href="#icon-tools"></use></svg></div>
+            <p class="capability__number">01 / INPUT → DECISION → OUTPUT</p>
+            <h3>AI 工具使用能力</h3>
+            <p>资深 AI Coding 用户，用 AI 消除重复劳动，把时间留给业务判断与结果复核。</p>
+            <div class="capability__proof"><span>截图结构化</span><i></i><span>日报独立审计</span></div>
           </article>
 
-          <article class="capability reveal reveal--mid">
-            <h3>OPERATIONS <span>/ 运营与增长</span></h3>
+          <article class="capability capability--violet" data-spotlight>
+            <div class="capability__icon"><svg aria-hidden="true"><use href="#icon-ops"></use></svg></div>
+            <p class="capability__number">02 / OPERATE → TRACK → IMPROVE</p>
+            <h3>运营能力</h3>
             <p>连接业务目标、数据、内容与交付，让运营动作进入可追踪的工作流。</p>
-            <ul class="evidence-list">
-              <li>采购 / 库存 / 物流 / FBA / 海外仓</li>
-              <li>抖音 / 小红书 · AI 产品与设计美学</li>
-            </ul>
+            <div class="capability__proof"><span>跨境全流程</span><i></i><span>内容与账户运营</span></div>
           </article>
 
-          <article class="capability reveal reveal--late">
-            <h3>BUSINESS-LED<br />SYSTEM BUILDING <span>/ 业务驱动的系统实现</span></h3>
-            <p>从业务问题而非技术名词出发，借助 AI 把需求翻译成可运行的系统。</p>
-            <ul class="evidence-list">
-              <li>LINGXING OPENAPI + XLWMS</li>
-              <li>ELECTRON · LAN · RBAC</li>
-            </ul>
+          <article class="capability capability--lime" data-spotlight>
+            <div class="capability__icon"><svg aria-hidden="true"><use href="#icon-code"></use></svg></div>
+            <p class="capability__number">03 / UNDERSTAND → BUILD → VERIFY</p>
+            <h3>非程序员视角的 CODING 能力</h3>
+            <p>不从技术名词出发，而从业务问题出发，把需求翻译成可运行的系统。</p>
+            <div class="capability__proof"><span>业务问题</span><i></i><span>可运行系统</span></div>
           </article>
         </div>
 
-        <div class="proof-index reveal">
-          <span>PROOF IN WORK · 黑豆人工智能公司项目</span>
-          <nav aria-label="项目证明">
-            <a href="#crossborder">黑豆跨境集群</a>
-            <a href="#quant">HEIDOUAI QUANT INFRASTRUCTURE · DE-IDENTIFIED</a>
-          </nav>
+        <div class="capability-convergence reveal" aria-label="工作方式">
+          <span>UNDERSTAND</span><i aria-hidden="true"></i><span>BUILD</span><i aria-hidden="true"></i><span>VERIFY</span>
         </div>
 
-        <div class="about-notes reveal" role="group" aria-label="个人背景补充">
+        <div class="about-notes reveal" role="group" aria-label="个人背景">
           <dl>
             <div>
               <dt>BACKGROUND</dt>
               <dd>岭南师范学院 · 景观设计 · 2023</dd>
             </div>
             <div>
-              <dt>WORKING STYLE</dt>
-              <dd>先理解业务，再拆流程、做原型、验证与交付</dd>
+              <dt>CURRENT / TARGET</dt>
+              <dd>AI 架构工程师 → AI 产品经理</dd>
             </div>
             <div>
-              <dt>OFF WORK</dt>
-              <dd>CS:GO · 听歌 · 唱歌</dd>
+              <dt>PROOF IN WORK</dt>
+              <dd><a href="#crossborder">黑豆跨境集群</a> · <a href="#quant">量化基础设施</a></dd>
             </div>
           </dl>
         </div>
@@ -161,7 +184,7 @@
       <div id="work" class="anchor-target" aria-hidden="true"></div>
 
       <section
-        class="project project--dark section-pad"
+        class="project project--crossborder signal-section section-pad"
         id="crossborder"
         data-section="work"
         aria-labelledby="crossborder-title"
@@ -200,31 +223,31 @@
 
             <div class="flow-main">
               <div class="flow-node">
-                <span class="flow-icon" aria-hidden="true">购</span>
+                <span class="flow-icon" aria-hidden="true"><svg><use href="#icon-cart"></use></svg></span>
                 <strong>采购</strong>
                 <small>PROCUREMENT</small>
               </div>
               <span class="flow-arrow" aria-hidden="true"></span>
               <div class="flow-node">
-                <span class="flow-icon" aria-hidden="true">库</span>
+                <span class="flow-icon" aria-hidden="true"><svg><use href="#icon-box"></use></svg></span>
                 <strong>库存</strong>
                 <small>INVENTORY</small>
               </div>
               <span class="flow-arrow" aria-hidden="true"></span>
               <div class="flow-node">
-                <span class="flow-icon" aria-hidden="true">运</span>
+                <span class="flow-icon" aria-hidden="true"><svg><use href="#icon-truck"></use></svg></span>
                 <strong>物流</strong>
                 <small>LOGISTICS</small>
               </div>
               <span class="flow-branch-link" aria-hidden="true"></span>
               <div class="flow-branches">
                 <div class="flow-node flow-node--branch">
-                  <span class="flow-icon" aria-hidden="true">F</span>
+                  <span class="flow-icon" aria-hidden="true"><svg><use href="#icon-box"></use></svg></span>
                   <strong>FBA</strong>
                   <small>FULFILLMENT</small>
                 </div>
                 <div class="flow-node flow-node--branch">
-                  <span class="flow-icon" aria-hidden="true">仓</span>
+                  <span class="flow-icon" aria-hidden="true"><svg><use href="#icon-warehouse"></use></svg></span>
                   <strong>海外仓</strong>
                   <small>OVERSEAS WAREHOUSE</small>
                 </div>
@@ -232,8 +255,8 @@
             </div>
           </div>
 
-          <figure class="ui-placeholder reveal reveal--late">
-            <figcaption>PRODUCT UI SLOT · ILLUSTRATIVE / REPLACE-LATER</figcaption>
+          <figure class="ui-placeholder reveal reveal--late" data-spotlight>
+            <figcaption>产品界面 · 待脱敏素材 / REPLACE-LATER</figcaption>
             <div class="ui-skeleton" aria-hidden="true">
               <div class="ui-skeleton__nav">
                 <i class="active"></i><i></i><i></i><i></i><i></i><i></i>
@@ -249,7 +272,7 @@
                 </div>
               </div>
             </div>
-            <p>REAL DE-IDENTIFIED SCREENSHOT WILL REPLACE THIS SLOT</p>
+            <p>不使用生成截图冒充项目证据；获得脱敏素材后再替换。</p>
           </figure>
         </div>
 
@@ -260,132 +283,130 @@
       </section>
 
       <section
-        class="project project--dark project--quant section-pad"
+        class="project project--quant story-section section-pad"
         id="quant"
         data-section="work"
         aria-labelledby="quant-title"
       >
-        <div class="quant-layout">
-          <div class="quant-main">
-            <header class="project__intro reveal">
-              <p class="project__english">HEIDOUAI QUANT INFRASTRUCTURE</p>
-              <h2 id="quant-title">AI 量化研究与交易基础设施</h2>
-              <p class="section-index">COMPANY PROJECT / DE-IDENTIFIED</p>
-              <p class="project__summary">
-                从市场数据到执行、风控、账本与审计的数字资产量化研究基础设施；
-                研究与交易隔离，结果可复验，权限最小化。
-              </p>
-            </header>
-
-            <ol class="system-spine reveal" aria-label="量化系统五层架构">
-              <li>
-                <span class="system-spine__number">01</span>
-                <span class="system-spine__glyph" aria-hidden="true">DATA</span>
-                <div><h3>DATA INTAKE / 数据采集</h3><p>行情 · K线 · 账户 · 持仓 · 数据质量</p></div>
-              </li>
-              <li>
-                <span class="system-spine__number">02</span>
-                <span class="system-spine__glyph" aria-hidden="true">STORE</span>
-                <div><h3>PROCESS + STORAGE / 处理与存储</h3><p>清洗 · 特征 · 标签 · 版本快照 · 元数据</p></div>
-              </li>
-              <li>
-                <span class="system-spine__number">03</span>
-                <span class="system-spine__glyph" aria-hidden="true">CODE</span>
-                <div><h3>RESEARCH + INFERENCE / 研究与推理</h3><p>Python · CCXT · Pandas · 策略信号 · 在线推理</p></div>
-              </li>
-              <li>
-                <span class="system-spine__number">04</span>
-                <span class="system-spine__glyph" aria-hidden="true">RISK</span>
-                <div><h3>RISK + EXECUTION / 风控与执行</h3><p>仓位检查 · 重复订单 · 权限校验 · 交易执行</p></div>
-              </li>
-              <li>
-                <span class="system-spine__number">05</span>
-                <span class="system-spine__glyph" aria-hidden="true">AUDIT</span>
-                <div><h3>LEDGER + AUDIT / 账本与审计</h3><p>订单 · 成交 · 持仓 · 风险事件 · 全链路复验</p></div>
-              </li>
-            </ol>
+        <header class="quant-header reveal">
+          <div>
+            <p class="section-index">COMPANY PROJECT / DE-IDENTIFIED</p>
+            <h2 id="quant-title">AI 量化研究与<br />交易基础设施</h2>
           </div>
+          <p>
+            从市场数据到执行、风控、账本与审计的完整研究体系；
+            研究与交易隔离，结果可复验，权限最小化。
+          </p>
+        </header>
 
-          <aside class="quant-aside reveal reveal--mid">
-            <div class="project__contribution">
-              <h3>JESKO CONTRIBUTION / 参与内容</h3>
-              <ul class="arrow-list">
-                <li>架构参与定制</li>
-                <li>Python / CCXT / Pandas 研究原型</li>
-                <li>交易系统与产品流程</li>
-                <li>桌面端引导页 · 已实现</li>
-              </ul>
-              <p class="status-line">TRADING SYSTEM + ONBOARDING GUIDE · IMPLEMENTED</p>
+        <div class="quant-architecture reveal" aria-label="AI 量化研究与交易基础设施五层架构">
+          <ol class="architecture-steps">
+            <li data-step="01">
+              <span class="architecture-icon"><svg aria-hidden="true"><use href="#icon-data"></use></svg></span>
+              <div><h3>数据采集</h3><p>行情 · K线 · 账户 · 持仓 · 数据质量</p></div>
+            </li>
+            <li data-step="02">
+              <span class="architecture-icon"><svg aria-hidden="true"><use href="#icon-store"></use></svg></span>
+              <div><h3>处理与存储</h3><p>清洗 · 特征 · 标签 · 版本快照 · 元数据</p></div>
+            </li>
+            <li data-step="03">
+              <span class="architecture-icon"><svg aria-hidden="true"><use href="#icon-research"></use></svg></span>
+              <div><h3>策略研究与推理</h3><p>Python · CCXT · Pandas · 策略信号 · 在线推理</p></div>
+            </li>
+            <li data-step="04">
+              <span class="architecture-icon"><svg aria-hidden="true"><use href="#icon-risk"></use></svg></span>
+              <div><h3>风控与执行</h3><p>仓位检查 · 重复订单 · 权限校验 · 交易执行</p></div>
+            </li>
+            <li data-step="05">
+              <span class="architecture-icon"><svg aria-hidden="true"><use href="#icon-audit"></use></svg></span>
+              <div><h3>账本与审计</h3><p>订单 · 成交 · 持仓 · 风险事件 · 全链路复验</p></div>
+            </li>
+          </ol>
+
+          <aside class="governance-rail" aria-label="贯穿全流程的安全治理">
+            <div class="governance-rail__title">
+              <svg aria-hidden="true"><use href="#icon-risk"></use></svg>
+              <div><span>贯穿全流程</span><h3>安全治理</h3></div>
             </div>
-
-            <button class="architecture-proof" type="button" data-dialog-open>
-              <span>FULL DE-IDENTIFIED ARCHITECTURE · EXPAND</span>
-              <img
-                src="assets/source/heidouai-quant-architecture.png"
-                width="1672"
-                height="941"
-                loading="lazy"
-                alt="AI 量化研究与交易基础设施脱敏架构图缩略图"
-              />
-            </button>
+            <ul>
+              <li><svg aria-hidden="true"><use href="#icon-tools"></use></svg><span>最小权限</span></li>
+              <li><svg aria-hidden="true"><use href="#icon-key"></use></svg><span>密钥托管</span></li>
+              <li><svg aria-hidden="true"><use href="#icon-code"></use></svg><span>研究与交易隔离</span></li>
+              <li><svg aria-hidden="true"><use href="#icon-audit"></use></svg><span>操作审计</span></li>
+            </ul>
           </aside>
         </div>
 
-        <footer class="project__footer project__footer--quant reveal">
-          <span>RESEARCH → SIGNAL → RISK → EXECUTION → AUDIT · COMPANY WORK</span>
-          <strong>架构设计与研究原型，不代表实盘收益</strong>
-        </footer>
+        <div class="quant-proof reveal">
+          <div><span>JESKO CONTRIBUTION</span><b>架构参与定制 · Python / CCXT / Pandas 研究原型 · 交易系统与引导页已实现</b></div>
+          <p><strong>风险说明</strong>架构设计与研究原型，不代表实盘收益</p>
+        </div>
       </section>
 
-      <section class="timeline paper-section section-pad" id="timeline" data-section="timeline">
+      <section class="timeline story-section section-pad" id="timeline" data-section="timeline">
         <header class="timeline__header reveal">
-          <p class="section-index">GROWTH TIMELINE · 2023—NOW</p>
-          <h2>从设计背景，<br />到可运行的 AI 系统。</h2>
+          <p class="section-index">CAREER STORY · 2023—NOW</p>
+          <h2>从业务理解，<br /><em>到系统交付。</em></h2>
+          <p>四个阶段不是平铺的年份，而是一条从设计思维走向 AI 产品化的成长路径。</p>
         </header>
 
-        <ol class="timeline-track reveal" aria-label="经历时间线">
-          <li>
-            <span class="timeline-dot" aria-hidden="true"></span>
-            <time>2023</time>
-            <p>岭南师范学院 · 景观设计毕业</p>
-            <p>加入黑豆人工智能</p>
+        <ol class="career-arc reveal" aria-label="2023年至今的四阶段职业经历">
+          <li class="career-chapter career-chapter--sky">
+            <article>
+              <time>2023—2024</time>
+              <span class="chapter-icon" aria-hidden="true"><svg><use href="#icon-box"></use></svg></span>
+              <h3>背景转化</h3>
+              <ul>
+                <li>岭南师范学院 · 景观设计毕业</li>
+                <li>加入黑豆人工智能</li>
+                <li>将设计方法转化为产品与系统思维</li>
+                <li>Azure AI 证书 · 历史学习证明</li>
+              </ul>
+            </article>
           </li>
-          <li>
-            <span class="timeline-dot" aria-hidden="true"></span>
-            <time>2024</time>
-            <p>Microsoft Azure AI Engineer Associate · Earned 2024</p>
-            <small>HISTORICAL CREDENTIAL · EXPIRED 2025</small>
+          <li class="career-chapter career-chapter--mint">
+            <article>
+              <time>2025</time>
+              <span class="chapter-icon" aria-hidden="true"><svg><use href="#icon-research"></use></svg></span>
+              <h3>方法形成</h3>
+              <ul>
+                <li>AI 量化研究原型</li>
+                <li>参与研究与交易基础设施定制</li>
+                <li>建立风控、权限与审计边界</li>
+              </ul>
+            </article>
           </li>
-          <li>
-            <span class="timeline-dot" aria-hidden="true"></span>
-            <time>2025</time>
-            <p>AI 量化研究与基础设施定制</p>
+          <li class="career-chapter career-chapter--butter">
+            <article>
+              <time>2026 H1</time>
+              <span class="chapter-icon" aria-hidden="true"><svg><use href="#icon-warehouse"></use></svg></span>
+              <h3>系统落地</h3>
+              <ul>
+                <li>领星 OpenAPI 与 XLWMS</li>
+                <li>库存、物流看板与采购自动化</li>
+                <li>封装 Electron 桌面应用</li>
+              </ul>
+            </article>
           </li>
-          <li>
-            <span class="timeline-dot" aria-hidden="true"></span>
-            <time>2026</time>
-            <p>黑豆跨境集群 · API 自动化</p>
-            <p>运营工作台 · AI 知识体系</p>
-          </li>
-          <li class="timeline-now">
-            <span class="timeline-dot" aria-hidden="true"></span>
-            <time>NOW</time>
-            <p><b>CURRENT</b> · AI ARCHITECTURE ENGINEER</p>
-            <p><b>TARGET</b> · AI PRODUCT MANAGER</p>
+          <li class="career-chapter career-chapter--current">
+            <article>
+              <time>2026 H2—NOW</time>
+              <span class="chapter-icon" aria-hidden="true"><svg><use href="#icon-code"></use></svg></span>
+              <h3>产品化与持续交付</h3>
+              <ul>
+                <li>黑豆跨境集群 · SKU 生命周期</li>
+                <li>权限、稳定性与知识中心</li>
+                <li>Monorepo、CI 与持续交付</li>
+                <li>下一站 · AI 产品经理</li>
+              </ul>
+            </article>
           </li>
         </ol>
 
-        <div class="goals reveal" role="group" aria-label="职业目标">
-          <article>
-            <span>01 MONTH</span>
-            <h3>成为团队最靠谱的“一块砖”</h3>
-            <p>快速熟悉业务流程，先让合作的人感到可靠，再持续改善系统与产品。</p>
-          </article>
-          <article>
-            <span>03 YEARS</span>
-            <h3>独立操盘项目</h3>
-            <p>跟随前辈步伐，成长为能够独立负责市场与 AI 产品项目的人。</p>
-          </article>
+        <div class="career-goal reveal" aria-label="职业目标">
+          <span>MY NEXT CHAPTER</span>
+          <h3>先成为团队最可靠的“一块砖”，<br />再成长为能独立操盘项目的 AI 产品经理。</h3>
+          <p>短期快速熟悉业务流程；长期持续积累产品判断、运营能力与项目交付经验。</p>
         </div>
 
         <div class="contact-strip reveal" id="contact" data-section="contact">
@@ -393,7 +414,7 @@
           <a href="mailto:Jesko223@gmail.com">Jesko223@gmail.com</a>
           <a href="https://github.com/Jesko23" target="_blank" rel="noreferrer">github.com/Jesko23</a>
           <a href="https://xhslink.cn/m/1MWkmcFF4ES" target="_blank" rel="noreferrer">XIAOHONGSHU · AKON-23</a>
-          <a class="contact-strip__cta" href="mailto:Jesko223@gmail.com">EMAIL JESKO →</a>
+          <a class="contact-strip__cta" href="mailto:Jesko223@gmail.com">EMAIL JESKO <span aria-hidden="true">↗</span></a>
         </div>
       </section>
     </main>
@@ -404,23 +425,5 @@
       <a href="#home">BACK TO TOP ↑</a>
     </footer>
 
-    <dialog class="architecture-dialog" data-dialog aria-labelledby="architecture-dialog-title">
-      <div class="architecture-dialog__bar">
-        <div>
-          <p id="architecture-dialog-title">AI 量化研究与交易基础设施（脱敏）</p>
-          <small>COMPANY PROJECT · SOURCE EVIDENCE</small>
-        </div>
-        <button type="button" data-dialog-close aria-label="关闭架构图">CLOSE ×</button>
-      </div>
-      <div class="architecture-dialog__media">
-        <img
-          src="assets/source/heidouai-quant-architecture.png"
-          width="1672"
-          height="941"
-          alt="AI 量化研究与交易基础设施脱敏完整架构图"
-        />
-      </div>
-      <p class="architecture-dialog__note">架构设计与研究原型，不代表实盘收益</p>
-    </dialog>
   </body>
 </html>
